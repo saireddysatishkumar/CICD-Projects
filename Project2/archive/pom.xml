@@ -1,0 +1,7 @@
+<distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>a0u02agzwvf9m-artifactory-primary-0-snapshots</name>
+        <url>https://saireddysatishkumar.jfrog.io/artifactory/libs-snapshot</url>
+    </snapshotRepository>
+</distributionManagement>
