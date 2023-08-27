@@ -12,3 +12,7 @@ step4: start docker container and generate a token for jenkins to connect.
 sudo -i  
 docker run dti --name sonarqube -p 9000:9000 sonarqube  
 step5: Add sonarqube token in jenkins master secrets.  
+
+## Projects  
+[Project 1](https://github.com/saireddysatishkumar/CICD-Projects/tree/main/Project1)  
+[Project 2](https://github.com/saireddysatishkumar/CICD-Projects/tree/main/Project2)  
