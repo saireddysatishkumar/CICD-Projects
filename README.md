@@ -3,6 +3,7 @@ Building seamless pipelines. Learn about continuous integration and continuous d
 
 ## Prerequisites:  
 > Install Jenkins in local system.  
+
 > Jenkins slave node setup  
 ``````
 step1: [setup vagrant](https://github.com/saireddysatishkumar/CICD-Projects/tree/main/vagrant)
@@ -12,4 +13,4 @@ step4: start docker container and generate a token for jenkins to connect.
 sudo -i
 docker run dti --name sonarqube -p 9000:9000 sonarqube
 step5: Add sonarqube token in jenkins master secrets.
-
+``````
