@@ -1,6 +1,6 @@
 # Project1
 
-## Installation on EC2 Instance
+## Jenkins Installation on EC2 Instance
 
 Install Jenkins, configure Docker as agent, set up cicd, deploy applications to k8s and much more.
 
