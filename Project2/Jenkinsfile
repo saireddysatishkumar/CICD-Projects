@@ -26,16 +26,16 @@ environment {
             }
         }
 
-        stage('SonarQube analysis') {
-        environment {
-          scannerHome = tool 'satish-sonarqube-scanner'
+    stage('Static Code Analysis') {
+      environment {
+        SONAR_URL = "http://localhost:9000"
+      }
+      steps {
+        withCredentials([string(credentialsId: 'sonarqube', variable: 'SONAR_AUTH_TOKEN')]) {
+        //  sh 'cd Project1/java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn sonar:sonar -Dsonar.login=$SONAR_AUTH_TOKEN -Dsonar.host.url=${SONAR_URL}'
         }
-            steps{
-            withSonarQubeEnv('satish-sonarqube-server') { // If you have configured more than one global server connection, you can specify its name
-              sh "${scannerHome}/bin/sonar-scanner"
-            }
-            }
-        }
+      }
+    }
         stage("Quality Gate"){
             steps {
                 script {
